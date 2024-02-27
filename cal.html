@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+
+</head>
+<body>
+    <div class="h-screen flex flex-col justify-center items-center gap-7 dark:bg-gray-900">
+        <h1 class="font-bold text-4xl dark:text-white"> Calculator</h1>
+        <div class="bg-white  border-2 border-black max-w-max grid grid-cols-4 gap-1 p-2" onkeydown="fun(event)"> 
+      
+          <input type="text" id="input" class="w-full border-black border-2 col-span-3 rounded-lg shadow-md text-2xl px-4" > 
+      
+          <button id="but-c" onclick="dis('')"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">C</button>
+       
+          <button id="but-1" onclick="dis(1)"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">1</button>
+          <button id="but-2" onclick="dis(2)" class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">2</button>
+          <button id="but-3" onclick="dis(3)"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">3</button>
+          <button id="but-add" onclick="dis('+')"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">+</button>
+          
+          <button id="but-4" onclick="dis(4)"   class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">4</button>
+          <button id="but-5" onclick="dis(5)"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">5</button>
+           <button id="but-6" onclick="dis(6)"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">6</button>
+          <button  id="but-sub" onclick="dis('-')"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">-</button>
+         
+          <button id="but-7" onclick="dis(7)"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">7</button>
+          <button id="but-8" onclick="dis(8)" class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">8</button>
+      
+          <button id="but-9" onclick="dis(9)" class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">9</button>
+          <button id="but-mul" onclick="dis('*')" class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">*</button>
+          
+          <button id="but-0" onclick="dis(0)"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">0</button>
+          <button id="but-point" onclick="dis('.')"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">.</button>
+          <button id="but-equal" onclick="solve()"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">=</button>
+          <button id="but-div" onclick="dis('/')"  class="bg-gray-200 rounded-lg hover:scale-100 shadow-2xl border-2 border-gray-100 size-24">/</button>
+        </div>
+      </div>
+
+      <script src="cal.js"></script>
+    
+</body>
+</html>
